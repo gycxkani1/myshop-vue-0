@@ -2,7 +2,7 @@ import request from '@/utils/request'
 // 封装请求的方式
 export function login(data) {
     return request({
-      url: '/login/',
+      url: 'login/',
       method: 'post',
       data
     })
@@ -10,7 +10,7 @@ export function login(data) {
 
   export function reg(data) {
     return request({
-      url: '/users/',
+      url: 'users/users/',
       method: 'post',
       data
     })
@@ -18,7 +18,7 @@ export function login(data) {
 
   export function addcart(data) {
     return request({
-      url: '/cart/',
+      url: 'order/cart/',
       method: 'post',
       data
     })
@@ -26,7 +26,7 @@ export function login(data) {
 
   export function getcart(data) {
     return request({
-      url: '/cart/',
+      url: 'order/cart/',
       method: 'get',
       data
     })
@@ -34,7 +34,7 @@ export function login(data) {
 
   export function goodscategory(data) {
     return request({
-      url: '/goodscategory/',
+      url: 'goods/goodscategory/',
       method: 'get',
       data
     })

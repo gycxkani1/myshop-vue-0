@@ -85,7 +85,7 @@ export default new Router({
       },
     },
     {
-      name: "/myorder",
+      name: "myorder",
       path: "/myorder",
       component: () => import('@/views/user/myorder'),
       meta: {

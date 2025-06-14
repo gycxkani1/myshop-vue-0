@@ -10,7 +10,7 @@ export function login(data) {
 
 export function reg(data) {
   return request({
-    url: '/users/',
+    url: 'users/users/',
     method: 'post',
     data
   })
@@ -18,14 +18,14 @@ export function reg(data) {
 
 export function getUsersByID() {
   return request({
-    url: '/users/1/',
+    url: 'users/users/1/',
     method: 'get',
   })
 }
 
 export function updateUsers(data) {
   return request({
-    url: '/users/1/',
+    url: 'users/users/1/',
     method: 'patch',
     data
   })
@@ -33,7 +33,7 @@ export function updateUsers(data) {
 
 export function updatePwd(data) {
   return request({
-    url: '/users/1/',
+    url: 'users/users/1/',
     method: 'patch',
     data
   })

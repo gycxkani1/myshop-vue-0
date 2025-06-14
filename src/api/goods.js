@@ -3,21 +3,21 @@ import request from '@/utils/request'
 //get方式请求商品分类
 export function getGoodsCategory() {
   return request({
-    url: '/goodscategory/',
+    url: 'goods/goodscategory/',
     method: 'get',
   })
 }
 //获取某个商品分类
 export function getGoodsCategoryByID(id) {
   return request({
-    url: '/goodscategory/' + id + '/',
+    url: 'goods/goodscategory/' + id + '/',
     method: 'get',
   })
 }
 //获取分类下的商品
 export function getCategoryGoods() {
   return request({
-    url: '/indexgoods/',
+    url: 'goods/indexgoods/',
     method: 'get',
   })
 }
@@ -25,7 +25,7 @@ export function getCategoryGoods() {
 //post方式获取商品。并传递参数
 export function getGoods(data) {
   return request({
-    url: '/goods/',
+    url: 'goods/goods/',
     method: 'get',
     params: data
   })
@@ -33,14 +33,14 @@ export function getGoods(data) {
 //获取某个商品
 export function getGoodsByID(id) {
   return request({
-    url: '/goods/' + id + '/',
+    url: 'goods/goods/' + id + '/',
     method: 'get',
   })
 }
 //获取商品轮播
 export function getSlide() {
   return request({
-    url: '/slide/',
+    url: 'goods/slide/',
     method: 'get',
   })
 }

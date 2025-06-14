@@ -55,7 +55,8 @@
     </div>
     <div class="hd_nav">
       <div class="hd_nav_bd cle">
-        <div          class="main_nav main_nav_hover"
+        <div
+          class="main_nav main_nav_hover"
           id="main_nav"
           @mouseover="overAllmenu"
           @mouseout="outAllmenu"
@@ -192,7 +193,7 @@ export default {
       showsubmenu: -1, //菜单显示控制
       first: false,
       current: false,
-      showCart: false,
+      showCart: false
     };
   },
   methods: {
@@ -217,26 +218,26 @@ export default {
       this.showCart = false;
     },
     getAllMenu() {
-      getGoodsCategory().then((response) => {
+      getGoodsCategory().then(response => {
         //console.log(response.data.results);
         this.allMenu = response.data.data;
       });
     },
     logout() {
       this.$store.dispatch("delUser");
-    },
+    }
   },
   computed: {
     ...mapGetters({
       userinfo: "userinfo",
       cart_lists: "cart_lists",
       totalNum: "totalNum",
-      totalPrice: "totalPrice",
-    }),
+      totalPrice: "totalPrice"
+    })
   },
   created() {
     this.getAllMenu();
     //console.log(this.cart_lists)
-  },
+  }
 };
 </script>

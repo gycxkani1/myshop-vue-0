@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 封装请求的方式
 export function addCart(data) {
   return request({
-    url: '/cart/',
+    url: 'order/cart/',
     method: 'post',
     data
   })
@@ -11,7 +11,7 @@ export function addCart(data) {
 
 export function getCart(data) {
   return request({
-    url: '/cart/',
+    url: 'order/cart/',
     method: 'get',
     data
   })
@@ -19,7 +19,7 @@ export function getCart(data) {
 
 export function updateCart(id,data) {
   return request({
-    url: '/cart/'+id+'/',
+    url: 'order/cart/'+id+'/',
     method: 'patch',
     data
   })
@@ -27,7 +27,7 @@ export function updateCart(id,data) {
 
 export function addOrder(data) {
   return request({
-    url: '/order/',
+    url: 'order/order/',
     method: 'post',
     data
   })
@@ -35,7 +35,7 @@ export function addOrder(data) {
 
 export function getOrder(data) {
   return request({
-    url: '/order/',
+    url: 'order/order/',
     method: 'get',
     data
   })
